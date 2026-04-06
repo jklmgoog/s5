@@ -1,4 +1,3 @@
-cat << 'EOF' > update_gost_v3.sh
 #!/bin/bash
 
 # 定义版本和架构（这里选 v3 优化版，如果报错请改回 amd64）
