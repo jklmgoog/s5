@@ -66,7 +66,7 @@ After=network.target
 [Service]
 Type=simple
 LimitNOFILE=65535
-ExecStart=/usr/bin/gost -L socks5://$USER:$PASS@:$PORT
+ExecStart=/usr/bin/gost -L socks5://$USER:$PASS@:$PORT?timeout=15s
 Restart=always
 RestartSec=5
 
